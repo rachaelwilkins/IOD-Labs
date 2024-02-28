@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <header>
+        <nav>
+            <a href="/test-repo/Lab One form.html">Form Page</a>
+          </nav>
+      </header>
+    <title>Lab One Exercises HTML Elements</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Lab One Attempt">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Rachael Wilkins">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    table, th, td {
+        border: 1px solid black;
+    }
+</style>
+<h1>My HTML learning journey</h1>
+<article>
+<h2>Learning elements - div, span, p, pre, ul, li, ol, article</h2>    
+<body>
+
+    <div>Hello</div> <div>How are you</div> <div>I'm thriving, thanks</div>
+    My favourite colour is <span style="color:darkorange">orange</span>, followed closely by <span style="color: blue;"> blue.</span> <span style="font-family: Georgia, 'Times New Roman', Times, serif;">I like the font Georgia; it's nice to read.</span>
+    <p> p represents paragraph without preserving spacing </p>
+    <pre> Text in a pre element is displayed in a fixed-width font, and it preserves both spaces and line breaks</pre>
+    <!-- didn't quite understand the task for the above exercise, so I just formatted the p and pre things but please let me know if that isn't right-->    
+    <div>   
+    <h3>An unordered shopping list</h3>
+    <ul>
+        <li>Bread</li>
+        <li>Eggs</li>
+        <li>Tea</li>
+            <ul>
+            <li>Peppermint tea</li>
+            <li>Green tea</li>
+            </ul>
+        <li>Bananas</li>
+      </ul>    
+    </div> 
+    <h3>An ordered shopping list</h3>
+    <ol>
+        <li>Bread</li>
+        <li>Eggs</li>
+        <li>Tea</li>
+    </ol>
+</body>
+</article>
+
+<article>
+    <h2>Article Two!</h2>
+<table>
+    <thead>
+    <tr>
+        <th colspan="2">First header</th>
+        <th>Second header</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>First cell - first row</td>
+            <td>Second cell - first row</td>
+            <td>Third cell - first row</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td rowspan="2">First cell - second row</td>
+            <td>Second cell - second row</td>
+            <td>Third cell - second row</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td>First cell - third row</td>
+            <td>Second cell - third row</td>
+            <td>Third cell - third row</td>
+        </tr>
+    </tbody>
+</table>
+</article>
+<article>
+    <h2>Article Three!</h2>
+        <img src="https://picsum.photos/400/400" alt="Interchanging Nature Image" width="300" height="300"><br>
+        <img src="/images/html_lab_image.jpg" alt="HTML Lab Image" width="300" height="300"><br>
+        <video width="300" controls autoplay>
+            <source src="/images/flower.webm" type="video/webm">
+            Sorry, your browser doesn't support embedded videos.
+        </video>
+    <div>
+        <audio controls autoplay="/images/t-rex-roar.mp3">
+            Your browser does not support the <code>audio</code> element.
+        </audio>
+    <!-- Could NOT get the autoplay thing going, or the figcaption bit, after so many attempts and scouring the internet. Would love some advice-->    
+    </div>
+</article>
+</html>
