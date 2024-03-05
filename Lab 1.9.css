@@ -1,0 +1,25 @@
+body {
+    background-color: darkgray;
+  }
+  
+  h1 {
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif
+  }
+
+  p {
+    color: black;
+    font-family:'Courier New', Courier, monospace
+  }
+
+  h2{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif
+  }
+
+  h3{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  
