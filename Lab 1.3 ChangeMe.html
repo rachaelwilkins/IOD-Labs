@@ -1,3 +1,5 @@
+<!--need help with getting the button clickable and how to activate it to change text and background colour. Just unsure of the stacking/formatting of the code for this-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,5 +53,11 @@
             <button class="button2">Change Me</button>
         </div>
     </div>  
+    <script>
+        window.onclick = myFunction;
+        function myFunction() {
+          document.getElementsByTagName("BODY")[0].style.backgroundColor = "yellow";
+        }
+        </script>
 </body>
 </html>

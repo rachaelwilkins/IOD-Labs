@@ -1,4 +1,4 @@
-{
+ let book_object = {
     "author": "Suzanne Collins",
     "country": "United States",
     "imageLink": "/images/The_Ballad_of_Songbirds_and_Snakes_(Suzanne_Collins).png",
@@ -8,3 +8,5 @@
     "title": "The Ballad of Songbirds and Snakes",
     "year": 2020
   }
+
+  console.log(book_object.Name)
