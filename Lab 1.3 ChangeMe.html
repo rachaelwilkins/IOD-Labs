@@ -44,16 +44,24 @@
     <div class="container">
         <div class="column" id="column1">
             <h1 id="heading1">Hello</h1>
-            <p>Hi - Konnichiwa - Bonjour - Gday - Kia Ora - Howdy - Annyeong - Hola - Ciao - Ni Hao</p> <!--extension work-->
-            <button class="button1">Change Me</button>
+            <button class="button1" onclick="changebackground1()">Change Me</button>
         </div>
         <div class="column" id="column2">
             <h1 id="heading2">World</h1>
-            <p>Earth - Planet - Globe - Orb - Rock - Sphere - Third Rock From The Sun</p> <!--extension work-->
-            <button class="button2">Change Me</button>
+            <button class="button2" onclick="changebackground2()">Change Me</button>
         </div>
     </div>  
 </body>
+    <script>
+        function changebackground1(){
+            document.getElementById("column1").style.backgroundColor="purple"
+            document.getElementById("heading1").innerText="Goodbye"
+        }
+    </script>
+    <script>
+        function changebackground2(){
+            document.getElementById("column2").style.backgroundColor="white"
+            document.getElementById("heading2").innerText="Pluto"
+        }
+    </script>
 </html>
-
-<!--need help with getting the button clickable and how to activate it to change text and background colour. Just unsure of the stacking/formatting of the code for this-->
