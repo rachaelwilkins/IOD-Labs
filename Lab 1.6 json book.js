@@ -1,12 +1,20 @@
- let book_object = {
-    "author": "Suzanne Collins",
-    "country": "United States",
-    "imageLink": "/images/The_Ballad_of_Songbirds_and_Snakes_(Suzanne_Collins).png",
-    "language": "English",
-    "link": "https://en.wikipedia.org/wiki/The_Ballad_of_Songbirds_and_Snakes",
-    "pages": 517,
-    "title": "The Ballad of Songbirds and Snakes",
-    "year": 2020
-  }
+    // Try creating a json object variable for a book. The book should have a title, description, author and number of pages
+  let book = {
+    name: "The Ballad of Songbirds and Snakes",
+    author: "Suzanne Collins",
+    country: "United States",
+    description: "Dystopian action-adventure novel"
+    pages: "517"
+    language: "English"
+    }
 
-  console.log(book_object.Name)
+    // Try printing these object property values in your console individually and via the whole student object
+    console.log(book.name);
+    console.log(book.author);
+    console.log(book.country);
+    console.log(book.description);
+    console.log(book.pages);
+    console.log(book.language);
+
+    // Update the qualification of the book.
+    book.description = "Young Adult novel"
