@@ -16,5 +16,5 @@
     console.log(book.pages);
     console.log(book.language);
 
-    // Update the qualification of the book.
+    // Update the qualification of the book
     book.description = "Young Adult novel"
