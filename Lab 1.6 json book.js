@@ -5,7 +5,7 @@
     country: "United States",
     description: "Dystopian action-adventure novel",
     pages: "517",
-    language: "English"
+    language: "English",
     }
 
     // Try printing these object property values in your console individually and via the whole student object
