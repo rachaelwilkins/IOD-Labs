@@ -3,7 +3,7 @@
     name: "The Ballad of Songbirds and Snakes",
     author: "Suzanne Collins",
     country: "United States",
-    description: "Dystopian action-adventure novel"
+    description: "Dystopian action-adventure novel",
     pages: "517"
     language: "English"
     }
