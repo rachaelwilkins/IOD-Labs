@@ -4,7 +4,7 @@
     author: "Suzanne Collins",
     country: "United States",
     description: "Dystopian action-adventure novel",
-    pages: "517"
+    pages: "517",
     language: "English"
     }
 
