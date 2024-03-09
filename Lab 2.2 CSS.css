@@ -1,0 +1,124 @@
+/* Lab 2.2 CSS Index file */
+
+/* I. Selectors and Combinators */
+article {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+  }
+
+ .style-me1 {
+    color: red;
+ }
+
+ #style-me2 {
+    color: blue;
+ }
+
+ /*I used an inline style here on number 4 - I think I have either cheated or been very smart because it works*/
+
+div p {
+    background-color: red;
+  }
+
+div > p {
+    background-color: lightgreen   /*NOT 100% CORRECT*/
+  }  
+
+/* II. Box model and common properties */
+.box {
+    background-color: lightgrey;
+    padding: 50px;
+    margin: 30px;
+    width: 15vw !important;
+    height: 15vh !important;
+    border: 10px solid aqua;
+    overflow: scroll;
+    outline-style: double;
+    border-radius: 50px;
+    background-image: url("/images/img1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*2.3 RESIZING BROWSER WINDOW - when I adjust the browser height and width the grey boxes resize but the text in the second box just spills everywhere*/
+/*4.1 BOX SIZING PROPERTY - the padding and margin is included in the box's total width and height, therefore the size shrinks*/
+/*5.2 OVERFLOW PROPERTY - prefer the scroll value here but played around with Visible (ugly) and Hidden (weird and not user friendly)*/
+
+/* III. Positioning */
+.position-absolute {
+    position: absolute; top: 0; left: 450px; right: 250px;
+    background-color: lightpink;
+}
+
+.position-relative {
+    position: relative;
+    background-color: lightskyblue;
+}
+
+.position-sticky {
+    position: sticky;
+    background-color: lightyellow;
+    position: 0; 
+}
+
+/* IV. Styling text */
+.text-style {
+    color: grey;
+    font-size: larger;
+    line-height: 30px;
+    font-weight: 500;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    letter-spacing: 5px;
+    word-spacing: 2px;
+    text-transform: lowercase;
+    text-decoration: line-through;
+}
+
+/* V. Styling links */
+a {
+    color: hotpink;
+    font-size: 25px;
+    font-weight: bolder;
+    text-decoration:none;
+}
+
+a:hover {
+    color:aqua;
+    text-decoration: line-through;
+}
+
+a:active {
+    color: blue;
+    text-decoration: underline;
+}  
+
+a:focus {
+    color: blueviolet;
+    text-decoration: overline;
+}
+
+a:visited {
+    color: rgb(212, 163, 56);
+    font-style: italic;
+}
+
+/*if the link is showing as that yellow colour as opposed to pink, it's because I clicked it to test it*/
+
+/* VI. calc() */
+.calc-style {
+    width: calc(100vw - 100px);
+    background-color: lightsalmon;
+}
+
+.fixed-width-col {
+    width: 350px;
+    display: inline-block;    
+}
+
+.fluid-col {  /*NOT 100% FINISHED*/
+    display: inline-block;
+    width: calc(100vw - 350px);
+}

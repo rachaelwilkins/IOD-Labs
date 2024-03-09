@@ -4,10 +4,10 @@
 <head>
     <header>
         <nav>
-            <a href="/test-repo/Lab One form.html">Form Page</a>
+            <a href="/IOD-Labs/Lab 2.1 form.html">Form Page</a>
           </nav>
       </header>
-    <title>Lab One Exercises HTML Elements</title>
+    <title>Lab 2.1 Exercises HTML Elements</title>
     <meta charset="UTF-8">
     <meta name="description" content="Lab One Attempt">
     <meta name="keywords" content="HTML, CSS, JavaScript">
@@ -23,7 +23,6 @@
 <article>
 <h2>Learning elements - div, span, p, pre, ul, li, ol, article</h2>    
 <body>
-
     <div>Hello</div> <div>How are you</div> <div>I'm thriving, thanks</div>
     My favourite colour is <span style="color:darkorange">orange</span>, followed closely by <span style="color: blue;"> blue.</span> <span style="font-family: Georgia, 'Times New Roman', Times, serif;">I like the font Georgia; it's nice to read.</span>
     <p> p represents paragraph without preserving spacing </p>
@@ -85,17 +84,24 @@
 </article>
 <article>
     <h2>Article Three!</h2>
-        <img src="https://picsum.photos/400/400" alt="Interchanging Nature Image" width="300" height="300"><br>
+        <img src="https://picsum.photos/400/400" alt="Interchanging Nature Image" width="300" height="300"><br> <!--I find this image takes a while to load? Any suggestions?-->
         <img src="/images/html_lab_image.jpg" alt="HTML Lab Image" width="300" height="300"><br>
-        <video width="300" controls autoplay>
+        <video width="250" controls autoplay>
             <source src="/images/flower.webm" type="video/webm">
             Sorry, your browser doesn't support embedded videos.
         </video>
     <div>
-        <audio controls autoplay="/images/t-rex-roar.mp3">
+        <audio id="myAudio" controls autoplay>
+            <source src="/images/t-rex-roar.mp3" type="audio/mp3">
             Your browser does not support the <code>audio</code> element.
         </audio>
-    <!-- Could NOT get the autoplay thing going, or the figcaption bit, after so many attempts and scouring the internet. Would love some advice-->    
     </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myAudio").autoplay;
+          document.getElementById("demo").innerHTML = x;
+        }
+    </script>
 </article>
+</body>
 </html>
