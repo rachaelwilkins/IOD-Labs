@@ -2,8 +2,8 @@
 
 const schedule = ["Read", "Eat", "Work", "Train", "Study", "Nap"];
 
-schedule[1] = "Have Coffee"
-schedule[4] = "Watch Netflix"
+schedule[0] = "Have Coffee"
+schedule[3] = "Watch Netflix"
 
 schedule.unshift("Wake Up")
 
