@@ -42,4 +42,65 @@ a {
 
 /* Add your answers here, do not modify the above CSS */
 
-1.
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-item-1 {
+    display: flex;
+    order: 1;
+}
+
+.flex-item-2 {
+    order: 2;
+}
+
+.flex-item-3 {
+    order: 3;
+}
+
+.flex-item-4 {
+    order: 4;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-space-between {
+    display: flex;
+    justify-content: space-between
+}
+
+.flex-basis-item-50 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-basis: 25%;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-basis: 25%;
+}
+
+.flex-menu {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    justify-content: right; 
+    gap: 2px;
+    height: 40px;
+}
+
+.fourth-item {
+    order: 5;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
