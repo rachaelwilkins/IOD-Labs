@@ -25,6 +25,6 @@ console.log(myFunctionDiv(8, 2))
 
 
 function sayHello(name) {
-console.log('Hello '+name)
+console.log('Hello'+name)
 }       
 sayHello("Rachael")

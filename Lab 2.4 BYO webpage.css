@@ -1,6 +1,53 @@
+body {
+    background-color:lightgray;
+    font-family:font-family: "Montserrat", sans-serif;
+  }
 
 header {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:lemonchiffon;
+    padding: 20px;
     font-size: larger;
+    text-align: left;
+}
+
+h1, h2, h3 {
+    color: black;
+}
+
+.flex-item-1 {
+    display: flex;
+    flex-direction: column;
+    background-color:lemonchiffon;
+    color: grey;
+    align-content: center;
+} 
+
+.flex-item-2 {
+    display: flex;
+    flex-direction: column;
+    background-color:whitesmoke;
+    color: grey;
+} 
+
+.flex-item-3 {
+    display: flex;
+    flex-direction: column;
+    background-color: lemonchiffon;
+    color: grey;
+} 
+
+.flex-item-4 {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    color: grey;
+} 
+
+footer {
+    font-size: smaller;
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
