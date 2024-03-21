@@ -13,12 +13,14 @@
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="Rachael Wilkins">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table, th, td {
+            border: 2px dotted;
+            color: aqua;
+        }
+
+    </style>
 </head>
-<style>
-    table, th, td {
-        border: 1px solid black;
-    }
-</style>
 <h1>My HTML learning journey</h1>
 <article>
 <h2>Learning elements - div, span, p, pre, ul, li, ol, article</h2>    
@@ -27,7 +29,6 @@
     My favourite colour is <span style="color:darkorange">orange</span>, followed closely by <span style="color: blue;"> blue.</span> <span style="font-family: Georgia, 'Times New Roman', Times, serif;">I like the font Georgia; it's nice to read.</span>
     <p> p represents paragraph without preserving spacing </p>
     <pre> Text in a pre element is displayed in a fixed-width font, and it preserves both spaces and line breaks</pre>
-    <!-- didn't quite understand the task for the above exercise, so I just formatted the p and pre things but please let me know if that isn't right-->    
     <div>   
     <h3>An unordered shopping list</h3>
     <ul>
@@ -91,16 +92,20 @@
             Sorry, your browser doesn't support embedded videos.
         </video>
     <div>
+    <figure>     
         <audio id="myAudio" controls autoplay>
             <source src="/images/t-rex-roar.mp3" type="audio/mp3">
             Your browser does not support the <code>audio</code> element.
         </audio>
+        <figcaption>ROARRRRRRRRRRRRRR</figcaption> 
+    </figure>      
     </div>
     <script>
         function myFunction() {
           var x = document.getElementById("myAudio").autoplay;
           document.getElementById("demo").innerHTML = x;
         }
+    
     </script>
 </article>
 </body>
