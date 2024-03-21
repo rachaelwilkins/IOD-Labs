@@ -60,7 +60,7 @@ div > p {
 .position-sticky {
     position: sticky;
     background-color: lightyellow;
-    position: 0; 
+    top: 20px;
 }
 
 /* IV. Styling text */
