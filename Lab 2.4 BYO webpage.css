@@ -1,23 +1,28 @@
 body {
-    background-color:lightgray;
-    font-family:font-family: "Montserrat", sans-serif;
-  }
+    font-family:'Courier New', Courier, monospace;
+}
 
 header {
     background-color:lemonchiffon;
     padding: 20px;
     font-size: larger;
     text-align: left;
+    position: sticky;
+    top: 0px;
 }
 
-h1, h2, h3 {
+h1 {
+    font-family:fantasy;
+}
+
+h2, h3 {
     color: black;
 }
 
 .flex-item-1 {
     display: flex;
     flex-direction: column;
-    background-color:lemonchiffon;
+    background-color:whitesmoke;
     color: grey;
     align-content: center;
 } 
@@ -32,8 +37,9 @@ h1, h2, h3 {
 .flex-item-3 {
     display: flex;
     flex-direction: column;
-    background-color: lemonchiffon;
-    color: grey;
+    background-color: lightgray;
+    color: black;
+    flex-wrap: wrap;
 } 
 
 .flex-item-4 {
@@ -43,10 +49,24 @@ h1, h2, h3 {
     color: grey;
 } 
 
+.flex-item-5 {
+    background-color: lemonchiffon;
+    color: grey;
+    text-align: end;
+}
+
 footer {
     font-size: smaller;
-    background-color: whitesmoke;
-    text-align: center;
+    background-color: grey;
+    color:lemonchiffon;
+    text-align:end;
     padding: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightgrey;
+        color: black;
+        text-align: left;
+    }
 }
