@@ -13,7 +13,14 @@ const auckland = {
     name: 'Auckland',
     capital: 'No',
     nickname: 'City of Sails',
-    major: 'Wayne Brown',
+    mayor: 'Wayne Brown',
     tallestbuilding: 'Sky Tower',
     }    
-    
+ 
+for (const prop in sydney) {
+    console.log(`sydney.${prop} = ${sydney[prop]}`);
+}
+
+for (const prop in auckland) {
+    console.log(`auckland.${prop} = ${auckland[prop]}`);
+}
