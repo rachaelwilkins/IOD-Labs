@@ -1,3 +1,5 @@
+// 3.1.10 - Persons
+
 // a) Create a new person using the constructor function and store it in a variable
 // b) Create a second person using different name and age values and store it in a separate variable
 // c) Print out the properties of each person object to the console
