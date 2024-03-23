@@ -8,4 +8,20 @@ function Person(name, age) {
     this.name = name;
     this.age = age;
     this.human = true;
+    this.canDrive = () => this.age >= 15;
     }
+
+let person1 = new Person('Rachael', 40, 'true')
+let person2 = new Person('Filipo', 35, 'true')
+
+console.log(person1);
+console.log(person2);
+
+function PersonClass(name, age) {
+    this.name = name;
+    this.age = age;
+    this.human = true;
+    this.canDrive = () => this.age >= 15;
+    }
+
+let person3 = new PersonClass('Millie', 8, 'true')   
