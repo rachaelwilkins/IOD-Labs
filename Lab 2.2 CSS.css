@@ -30,12 +30,12 @@ div > p {
     background-color: lightgrey;
     padding: 50px;
     margin: 30px;
-    width: 15vw !important;
+    width: 10vw !important;
     height: 15vh !important;
     border: 10px solid aqua;
     overflow: scroll;
     outline-style: double;
-    border-radius: 50px;
+    border-radius: 50%;
     background-image: url("/images/img1.png");
     background-size: cover;
     background-repeat: no-repeat;
