@@ -17,6 +17,3 @@ undefined + 1 // NaN
 undefined == null // true 
 undefined === null // false 
 " \t \n" - 2 // -2
-
-
-console.log(" \t \n" - 2);
