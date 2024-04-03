@@ -1,5 +1,4 @@
 // 3.1.08 - City
-
 // a) Write a function that takes an object as an argument and uses a for…in loop to access and print to the console each of those object properties and their values. Test it using the sydney object below.
 // b) Create a new object for a different city with different properties and call your function again with the new object.
 

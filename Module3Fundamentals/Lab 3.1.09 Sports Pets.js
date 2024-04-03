@@ -1,5 +1,4 @@
 // 3.1.09 - Sports and Pets
-
 // a) Create a new moreSports variable equal to teamSports and add some new sport values to it (using push and unshift)
 // b) Create a new dog2 variable equal to dog1 and give it a new value
 // c) Create a new cat2 variable equal to cat1 and change its name property
