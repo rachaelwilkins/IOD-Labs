@@ -18,8 +18,12 @@ const basketballGame = {
     },
     halfTime() {
     console.log('Halftime score is '+this.score);
+    },
+    fullTime() {
+    console.log('Fulltime score is '+this.score);
+    }    
     }
-    }
+    
     //modify each of the above object methods to enable function chaining as below:
     basketballGame.basket().freeThrow().freeThrow().basket().threePointer().halfTime();
     

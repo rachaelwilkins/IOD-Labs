@@ -4,15 +4,16 @@
 // b) Complete getCatchPhrase so that if the person argument has 6 fingers, it instead prints his famous catch phrase to the console.
 // c) Update getCatchPhrase to use arrow function syntax and a conditional operator.
 
-    const westley = {
+const westley = {
     name: 'Westley',
     numFingers: 5
 }
-    const rugen = {
+const rugen = {
     name: 'Count Rugen',
     numFingers: 6
 }
-    const inigo = {
+
+const inigo = {
     firstName: 'Inigo',
     lastName: 'Montoya',
     greeting(person) { 
@@ -20,8 +21,9 @@
         console.log(greeting + this.getCatchPhrase(person));
     },
     getCatchPhrase(person) {
-        return 'Nice to meet you.';  
+    return 'Nice to meet you.';
     }
 }
+
     inigo.greeting(westley)
     inigo.greeting(rugen)

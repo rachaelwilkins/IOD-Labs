@@ -5,3 +5,4 @@ if ("0") console.log('#2 zero is true') //prints
 if (null) console.log('null is true')
 if (-1) console.log('negative is true') //prints
 if (1) console.log('positive is true') //prints
+
