@@ -1,8 +1,8 @@
-// 3.5 Rewrite the following function using: a) function expression syntax, and b) arrow function syntax. Test each version to make sure they work the same.
+/* 3.5 Rewrite the following function using: a) function expression syntax, and b) arrow function syntax. Test each version to make sure they work the same.
 
-//function getGreeting(name) {
-//    return 'Hello ' + name + '!';
-//    }
+function getGreeting(name) {
+    return 'Hello ' + name + '!';
+    } */
 
 // function expression syntax
 const getGreeting = function() {
@@ -10,7 +10,6 @@ const getGreeting = function() {
   };
   
   getGreeting(); // Hello, Layne! 
-
 
 
 // arrow function syntax
