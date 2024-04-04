@@ -7,24 +7,34 @@
 
 const basketballGame = {
     score: 0,
+    fouls: 0,
     freeThrow() {
     this.score++;
+    return this 
+    },
+    foul() {
+    this.fouls++;
+    return this 
     },
     basket() {
     this.score += 2;
+    return this 
     },
     threePointer() {
     this.score += 3;
+    return this 
     },
     halfTime() {
     console.log('Halftime score is '+this.score);
+    return this 
     },
     fullTime() {
     console.log('Fulltime score is '+this.score);
+    return this 
     }    
     }
     
-    basketballGame.basket().freeThrow().freeThrow().basket().threePointer().halfTime();
+    basketballGame.basket().freeThrow().foul().freeThrow().basket().threePointer().foul().basket().halfTime().basket().basket().basket().foul().fullTime()
 
    
     
