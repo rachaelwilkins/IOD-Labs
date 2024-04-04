@@ -24,6 +24,7 @@ const basketballGame = {
     }    
     }
     
-    //modify each of the above object methods to enable function chaining as below:
     basketballGame.basket().freeThrow().freeThrow().basket().threePointer().halfTime();
+
+   
     
