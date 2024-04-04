@@ -17,12 +17,12 @@ const inigo = {
     firstName: 'Inigo',
     lastName: 'Montoya',
     greeting(person) { 
-        let greeting = `Hello ${person.name}, my name is ${this.firstName}. `;
+        let greeting = `Hello ${person.name}, my name is ${this.firstName + this.lastName}. `;
         console.log(greeting + this.getCatchPhrase(person));
     },
     getCatchPhrase(person) {
-    return 'Nice to meet you.';
-    }
+        return 'Nice to meet you.';
+        }
 }
 
     inigo.greeting(westley)
