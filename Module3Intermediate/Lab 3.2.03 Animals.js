@@ -16,7 +16,7 @@ animals.sort();
 animals.splice(3, 0, 'Moose'); //I know this doesn't answer the question, but it prints correctly! Will keep working on it. 
 
 /*e) Write a function findMatchingAnimals(beginsWith) that returns a new array containing all the animals that begin with the beginsWith string. 
-Try to make it work regardless of upper/lower case.*/
+Try to make it work regardless of upper/lower case. INCOMPLETE*/
 
 function findMatchingAnimals(beginsWith) {
     return beginsWith == 'G';
