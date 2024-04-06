@@ -15,9 +15,16 @@ console.log(phoneBookDEF);
 //b) Initialise the contents of phoneBookDEF by passing in an array of keys/values//
 
 
+
 //c) Update the phone number for Caroline//
 
+phoneBookABC.forEach((value,key) => {
+    if (value === '0455221182') {
+        phoneBookABC.set(key, '0498765432')
+    }
+})
 
+console.log(phoneBookABC);
 
 //d) Write a function printPhoneBook(contacts) that prints the names and phone numbers in the given Map//
 
