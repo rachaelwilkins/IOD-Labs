@@ -1,9 +1,4 @@
-/* Given the below salaries object, perform the following tasks.
-a) Write a function sumSalaries(salaries) that calculates and returns the total of all salaries
-b) Write a function topEarner(salaries) that calculates and returns the name of the person earning the highest salary */
-
-const { max } = require("moment");
-
+// Given the below salaries object, perform the following tasks.//
 
 let salaries = {
     "Timothy" : 35000,
@@ -13,6 +8,7 @@ let salaries = {
     "James" : 43000
   };
 
+// a) Write a function sumSalaries(salaries) that calculates and returns the total of all salaries //
 
 function sumSalaries(salaries) {
 
@@ -25,5 +21,11 @@ function sumSalaries(salaries) {
   
 console.log( sumSalaries(salaries) ); //233,000 
 
+// b) Write a function topEarner(salaries) that calculates and returns the name of the person earning the highest salary //
 
+function topEarner(salaries) {
+
+  }
+
+console.log( topEarner(salaries) );
 
