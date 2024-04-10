@@ -19,3 +19,4 @@ function addCard() {
   document.querySelector("#card-list").appendChild(template);
 }
 addCard();
+
