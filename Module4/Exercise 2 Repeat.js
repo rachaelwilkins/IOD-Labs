@@ -2,6 +2,9 @@
 const data = [{ name: "bob", age: 23 },
   { name: "alice", age: 39 },];
 
+
+  
+
   function addCard() {
         const template = document.getElementById("card-template").content.cloneNode(true);
         template.querySelector(".card-title").innerText = "Bob", "Alice";
