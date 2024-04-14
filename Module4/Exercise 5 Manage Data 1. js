@@ -14,6 +14,6 @@ function getNews() {
  }, 5000)
  })
 }
-// get data asynchronously, then console.log for testing
+
 getNews().then((news) => console.log(news))
 
