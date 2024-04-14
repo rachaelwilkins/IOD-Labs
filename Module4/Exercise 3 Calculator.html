@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a basic calculator.</title>
+    <link rel="stylesheet" href="/IOD-Labs/Module4/Exercise 3 Calculator.css">
+    <script src="/IOD-Labs/Module4/Exercise 3 Calculator.js"></script>
+</head>
+<body>
+  <h1>a very very basic and boring calculator.</h1>  
+  <p>it's simple - you have two numbers you want to do something with, we have the tool.</p> 
+  <p>no frills, no functions, no fun.</p><br>
+  <div class="flex-container">
+  <input type="text" id="p1" name="p1" placeholder="num 1"><br>
+  </div> 
+  <tr> 
+  <div class="flex-center">  
+        <td> <input type="button" value="+" onclick="myFunctionAdd()" /> </td>
+        <td> <input type="button" value="-" onclick="myFunctionSub()" /> </td> 
+        <td> <input type="button" value="*" onclick="myFunctionTimes()" /> </td> 
+        <td> <input type="button" value="/" onclick="myFunctionDiv()" /> </td>
+        <td> <input type="button" value="C" onclick="reset()" /> </td>
+    </tr>
+  </div> 
+  <div class="flex-container">
+    <input type="text" id="p2" name="p2" placeholder="num 2"><br><br>
+<button onclick="equals()">Equals</button>
+    </div>  
+<footer>created by Elton Dog, 2024.</footer>
+</body>
+</html>
