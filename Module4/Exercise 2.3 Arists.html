@@ -31,17 +31,23 @@
     </template>
     <div id="card-list"></div>
     <script>
+const artist = {
+ name: "Van Gogh",
+ portfolio:[{title: "portrait", url: "https://collectionapi.metmuseum.org/api/collection/v1/iiif/436532/1671316/main-image"},
+            {title: "sky", url:"https://mymodernmet.com/wp/wp-content/uploads/2020/11/White-house-night-van-goh-worldwide-2.jpg" },
+ ]
+}
     function addCard() {
     // clone the template
      const template = 
             document.getElementById("card-template").content.cloneNode(true);
     // populate the template
-    template.querySelector('.card-title').innerText ='Filipo';
-    template.querySelector('.card-text').innerText ='36 years old';
+    template.querySelector('.card-title').innerText = name;
+    template.querySelector('.card-text').innerText = portfolio;
     // include the populated template into the page
     document.querySelector('#card-list').appendChild(template);
     }
-    addCard();
+    addCard(artist);
    </script>  
   </body>
 </html>
