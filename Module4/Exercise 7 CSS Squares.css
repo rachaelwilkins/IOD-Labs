@@ -1,0 +1,29 @@
+div {
+    animation-name: my-animation;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto;
+    margin-right: auto; 
+  
+  }
+  
+  @keyframes my-animation {
+    from {
+      background-color: red;
+      width: 200px;
+      top: 10px;
+    }
+    to {
+      background-color: blue;
+      width: 200px;
+      top: 800px;
+    }
+  }
