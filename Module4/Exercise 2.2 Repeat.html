@@ -31,21 +31,21 @@
     </template>
     <div id="card-list"></div>
     <script>
-     const data = [
-      {name: 'bob', age: 23},
-      {name: 'alice', age: 39}
-    ]; 
-    function addCard() {
+    const data = [{ name: 'bob', age: 23 }, { name: 'alice', age: 39 }]; 
+    function addCard(person) {
+
     // clone the template
      const template = 
             document.getElementById("card-template").content.cloneNode(true);
+
     // populate the template
-    template.querySelector('.card-title').innerText = data.name;
-    template.querySelector('.card-text').innerText = data.age;
+    template.querySelector('.card-title').innerText = person.name;
+    template.querySelector('.card-text').innerText = person.age;
+    
     // include the populated template into the page
     document.querySelector('#card-list').appendChild(template);
     }
-    addCard(data);
+    addCard(person.name, person.age);
    </script>  
   </body>
 </html>
