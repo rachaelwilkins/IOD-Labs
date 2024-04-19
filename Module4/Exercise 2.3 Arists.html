@@ -20,6 +20,7 @@
       }
     </style>
   </head>
+
   <body>
     <template id="card-template">
       <div class="card">
@@ -30,24 +31,37 @@
       </div>
     </template>
     <div id="card-list"></div>
+
     <script>
-const artist = {
- name: "Van Gogh",
- portfolio:[{title: "portrait", url: "https://collectionapi.metmuseum.org/api/collection/v1/iiif/436532/1671316/main-image"},
-            {title: "sky", url:"https://mymodernmet.com/wp/wp-content/uploads/2020/11/White-house-night-van-goh-worldwide-2.jpg" },
- ]
-}
-    function addCard() {
+    const artist = {
+            name: "Van Gogh",
+            portfolio: [
+                {
+                    title: "portrait", url:
+                        "https://collectionapi.metmuseum.org/api/collection/v1/iiif/436532/1671316/main-image"
+                },
+                {
+                    title: "sky", url:
+                        "https://mymodernmet.com/wp/wp-content/uploads/2020/11/White-house-night-van-goh-worldwide-2.jpg"
+                },
+            ]
+        };
+    function addArtistCard(name, portfolio) {
     // clone the template
+
      const template = 
-            document.getElementById("card-template").content.cloneNode(true);
+            document.getElementById("card-template")
+                .content.cloneNode(true);
     // populate the template
-    template.querySelector('.card-title').innerText = name;
-    template.querySelector('.card-text').innerText = portfolio;
+
+    template.querySelector('.card-title').innerText ='title';
+    template.querySelector('.card-text').innerText ='text';
     // include the populated template into the page
-    document.querySelector('#card-list').appendChild(template);
+
+    document.querySelector('#card-list')
+            .appendChild(template);
     }
-    addCard(artist);
+    addArtistCard(artist.name, artist.portfolio);
    </script>  
   </body>
 </html>
