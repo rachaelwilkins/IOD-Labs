@@ -20,6 +20,7 @@
       }
     </style>
   </head>
+
   <body>
     <template id="card-template">
       <div class="card">
@@ -31,15 +32,20 @@
     </template>
     <div id="card-list"></div>
     <script>
-    function addCard() {
+    function addCard(title, text) {
+
     // clone the template
      const template = 
-            document.getElementById("card-template").content.cloneNode(true);
+            document.getElementById("card-template")
+                .content.cloneNode(true);
+
     // populate the template
-    template.querySelector('.card-title').innerText ='Filipo';
-    template.querySelector('.card-text').innerText ='36 years old';
+    template.querySelector('.card-title').innerText ='title';
+    template.querySelector('.card-text').innerText ='text';
+    
     // include the populated template into the page
-    document.querySelector('#card-list').appendChild(template);
+    document.querySelector('#card-list')
+            .appendChild(template);
     }
     addCard();
    </script>  
