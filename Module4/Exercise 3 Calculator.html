@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>a basic calculator.</title>
     <link rel="stylesheet" href="/IOD-Labs/Module4/Exercise 3 Calculator.css">
-    <script src="/IOD-Labs/Module4/Exercise 3 Calculator.js"></script>
 </head>
 <body>
   <h1>a very very basic and boring calculator.</h1>  
@@ -16,17 +15,70 @@
   </div> 
   <tr> 
   <div class="flex-center">  
-        <td> <input type="button" value="+" onclick="myFunctionAdd()" /> </td>
-        <td> <input type="button" value="-" onclick="myFunctionSub()" /> </td> 
-        <td> <input type="button" value="*" onclick="myFunctionTimes()" /> </td> 
-        <td> <input type="button" value="/" onclick="myFunctionDiv()" /> </td>
-        <td> <input type="button" value="C" onclick="reset()" /> </td>
+     <button type="button" onclick="myFunctionAdd()">+</button>
+     <button type="button" onclick="myFunctionSub()">-</button>
+     <button type="button" onclick="myFunctionTimes()">*</button>
+     <button type="button" onclick="myFunctionDiv()">/</button>
+     <button type="button" onclick="clr()">C</button>
     </tr>
   </div> 
   <div class="flex-container">
     <input type="text" id="p2" name="p2" placeholder="num 2"><br><br>
-<button onclick="equals()">Equals</button>
+
+    <button type="button" onclick="solve()">=</button>
+    <input id="result">
     </div>  
-<footer>created by Elton Dog, 2024.</footer>
+
+ <script>
+  let p1;
+  let p2;
+  let result;
+  function myFunctionAdd() {
+    p1=document.getElementById("p1").value;  
+    p2=document.getElementById("p2").value;  
+    p1=parseInt(p1);
+    p2=parseInt(p2);
+    result=p1+p2
+    console.log(result);
+    document.getElementById("result").value = result; 
+  }
+  
+  function myFunctionSub() {
+    p1=document.getElementById("p1").value;  
+    p2=document.getElementById("p2").value;  
+    p1=parseInt(p1);
+    p2=parseInt(p2);
+    result=p1-p2
+    console.log(result);
+    document.getElementById("result").value = result; 
+  }
+    
+  function myFunctionTimes() {
+    p1=document.getElementById("p1").value;  
+    p2=document.getElementById("p2").value;  
+    p1=parseInt(p1);
+    p2=parseInt(p2);
+    result=p1*p2
+    console.log(result);
+    document.getElementById("result").value = result; 
+  }
+  
+  function myFunctionDiv() {
+    p1=document.getElementById("p1").value;  
+    p2=document.getElementById("p2").value;  
+    p1=parseInt(p1);
+    p2=parseInt(p2);
+    result=p1/p2
+    console.log(result);
+    document.getElementById("result").value = result; 
+  }
+
+  function clr() {
+
+        } 
+
+
+ </script>   
+ <footer>created by Elton Dog, 2024.</footer>
 </body>
 </html>
