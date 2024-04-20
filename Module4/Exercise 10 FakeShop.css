@@ -1,0 +1,31 @@
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: pink;
+    text-align: center;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 16px;
+}
+
+h5 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif
+    text-align: left;
+    font-size: 14px;
+}
+
+.imgCards {
+    height: 250px;
+}
+
+#dropDownSelect {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+}
