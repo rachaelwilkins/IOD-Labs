@@ -1,4 +1,4 @@
-let numProducts = 3;
+let numProducts = 1;
 let products = [];
 
 function getCards() {
