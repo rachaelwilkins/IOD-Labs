@@ -15,7 +15,6 @@ function getCards() {
                             <div class="card-body">
                                 <h5 class="card-title">${products[i].name}</h5>
                                 <p class="card-text">${products[i].description}</p>
-                                <p class="class-link">${products[i].wikipedia_url}</p>
                             </div>
                         </div>
                     </div>
