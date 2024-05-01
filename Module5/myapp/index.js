@@ -1,6 +1,6 @@
-const express = require("express"); //importing express library/framework
+const express = require("express"); 
 
-const app = express(); //create an application 
+const app = express(); 
 
 const port = 3000; 
 
