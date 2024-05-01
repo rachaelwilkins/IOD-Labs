@@ -1,0 +1,17 @@
+<html lang="en">
+  <head>
+    <title>Calculator Example</title>
+  </head>
+  <body>
+    <h1>The Result Is</h1>
+    <div style="font-weight: bold;" id="result">
+    </div>
+  </body>
+  <script>
+    fetch("http://127.0.0.1:3004/Calculator/Add?num1=1&num2=21")
+      .then((response) => response.json())
+      .then((data) => document.getElementById("result").innerText = data.result;
+    )
+  </script>
+
+</html>
