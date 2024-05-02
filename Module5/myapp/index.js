@@ -1,6 +1,9 @@
 const express = require("express"); 
-
+const cors = require("cors");
 const app = express(); 
+app.use(cors())
+const ex2 = require("./Routes/Exercise 5.2")
+app.use(`/api/ex2`, ex2)
 
 const port = 3000; 
 
