@@ -1,5 +1,6 @@
 class Calculator {
   constructor() {
+  this.id = Date.now() 
   }
 
   #log = (value) => {
