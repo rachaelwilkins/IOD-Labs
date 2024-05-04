@@ -1,6 +1,6 @@
 class Calculator {
   constructor() {
-  this.id = Date.now() 
+  this.id = Math.floor(Math.random() * 1_000_000) + 1; //random number from 1 to 1,000,000
   }
 
   #log = (value) => {
