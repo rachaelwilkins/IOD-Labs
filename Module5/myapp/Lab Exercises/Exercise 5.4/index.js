@@ -9,8 +9,10 @@ app.use(express.json());
 
 app.use('/', express.static('public'))
 app.use('/friends', friendRoutes);
+app.use('/friends')
 
 // starts the backend app on the given port
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
+
