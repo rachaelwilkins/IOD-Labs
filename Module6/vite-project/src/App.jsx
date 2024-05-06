@@ -17,6 +17,14 @@ function App() {
 </div>);
 }
 
+function Welcome(props) {
+  return (
+  <div className="componentBox">
+  <h3>Welcome {props.name}!</h3>
+  </div> 
+  )
+ }
+ 
   function handleButtonClick(){
     //WIP
   }
