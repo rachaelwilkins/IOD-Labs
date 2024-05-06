@@ -85,8 +85,7 @@ router.get('/filter', (req, res) => {
 
 // if the new friend is valid, add them to the list and return the successfully added object
     friends.push(newFriend)
-    res.status(200).json(newFriend)
-})
+    res.status(200).json(newFriend)}) 
 
 // 4. Complete this new route for a PUT request which will update data for an existing friend
     router.put('/:id', (req, res) => {
