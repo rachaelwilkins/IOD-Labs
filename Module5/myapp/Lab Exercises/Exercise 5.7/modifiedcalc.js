@@ -1,7 +1,7 @@
 const Calculator = require('./calculatorlibrary');
 let myCalc = new Calculator()
-myCalc.add(3,4)
-myCalc.multiply(3,4)
+myCalc.add(4,3)
+myCalc.multiply(4,3)
 myCalc.subtract(8,4)
 myCalc.divide(8,4)
 
