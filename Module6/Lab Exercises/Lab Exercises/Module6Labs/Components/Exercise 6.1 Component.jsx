@@ -2,7 +2,7 @@ function Lab1Greeting({name='World', children}){
 
     return (
         <>
-        <p>Hello {name} </p>
+        <p>Hello {name}!</p>
         {children}
         </>
     )
