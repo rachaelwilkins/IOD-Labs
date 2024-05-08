@@ -29,6 +29,9 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <Greeting name='John'>
+        <p>This is React - hope you like it as much as Gareth does.</p>
+      </Greeting>
     </>
   )
 }

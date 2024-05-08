@@ -1,9 +1,11 @@
-function LabComponent() {
-    return (
-    <div className="LabComponent componentBox">
-    <h1>Hello World!</h1>
-    </div>
-    )
-   }
+function Lab1Greeting({name='World', children}){
 
-<LabComponent/>   
+    return (
+        <>
+        <p>Hello {name} </p>
+        {children}
+        </>
+    )
+}
+
+export default Lab1Greeting
