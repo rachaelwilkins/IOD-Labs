@@ -26,9 +26,9 @@ function SingleCat({ name }) {
 
     return (
         <li>
-            <h1>
+            <h2>
                 {name}
-            </h1>
+            </h2>
             <div>
                 <img src={catImage} alt={`Photo of a ${name}`} />
             </div>
