@@ -2,7 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Lab1Greeting from '../Exercise 6.1 Component'
+import Lab1Greeting from './Components/Exercise 6.1 Component'
+import BigCats from './Components/BigCats'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -32,6 +33,7 @@ function App() {
       <Lab1Greeting name='John'>
         <p>This is React - hope you like it as much as Gareth does.</p>
       </Lab1Greeting>
+      <BigCats/>
     </>
   )
 }
