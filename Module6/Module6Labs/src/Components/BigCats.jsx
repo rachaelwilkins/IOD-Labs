@@ -38,7 +38,7 @@ function BigCats() {
 
     return (
         <div className="BigCats componentBox">
-            <h2>Exercises 2, 4 and 5 - Big Cats</h2>
+            <h1>Exercises 2, 4 and 5 - Big Cats</h1>
                 <button onClick={handleSortCats}>Sort A-Z</button>
                 <button onClick={handleReverseCats}>Sort Z-A</button>
                 <button onClick={handleFilterCats}>Panthera Only</button>
