@@ -4,8 +4,6 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Lab1Greeting from './Components/Greeting'
 import BigCats from './Components/BigCats'
-import AddCatForm from './Components/AddCatForm'
-import EmojiChanger from './Components/Emoji'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -35,9 +33,7 @@ function App() {
       <Lab1Greeting name='John'>
         <p>This is React - hope you like it as much as Gareth does.</p>
       </Lab1Greeting>
-      <BigCats/>
-      <AddCatForm/>
-      <EmojiChanger/>      
+      <BigCats/> 
     </>
 
   )
