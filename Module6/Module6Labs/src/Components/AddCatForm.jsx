@@ -18,7 +18,8 @@ return (
             <label>Latin Name: 
                 <input name="latinName" value={latinName}
                     onChange={(e) => setLatinName(e.target.value)}/>
-            </label>      
+            </label>   
+            <label>   
             <p>Image:</p> 
                 <input name="file" input type="file" value={image}
                     onChange={(e) => setImage(e.target.value)}/>
