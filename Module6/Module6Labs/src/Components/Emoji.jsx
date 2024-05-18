@@ -12,7 +12,7 @@ const handleDefaultMood = () => {
 return (
   <div className="MoodChanger">
     <h1>Exercise 3 - Emoji</h1>
-    Current Mood: {'../../EmojiImages/happy emoji.jpg'}
+    Current Mood: {'happy'}
     <button onClick={() => setMood()}>Change Mood</button>    
   </div>  
 )
