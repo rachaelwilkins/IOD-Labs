@@ -1,20 +1,20 @@
 function EmojiChanger() {
-  
-  const moods = [
-    { name: "Happy", image: "../../EmojiImages/happy emoji.jpg" },
-    { name: "Sad", image: "../../EmojiImages/sad emoji.jpg" },
-  ];
 
-  const handleBeHappy = () => {
-    setMood("Happy")
-  }
+const moods = [
+    {name: 'happy', image: '../../EmojiImages/happy emoji.jpg'},
+    {name: 'sad', image: '../../EmojiImages/sad emoji.jpg'},
+];
 
-  return (
-    <div className="MoodChanger">
-      <h2>Exercise 3 - Emoji Changer</h2>
-      <button onClick={() => setMood()}>Change Mood</button>
-    </div>
-  );
+const handleDefaultMood = () => {
+  setMood('happy')
+}
+
+return (
+  <div className="MoodChanger">
+    Current Mood: {mood}
+    <button onClick={() => setMood('sad')}>Sad</button>
+  </div>  
+)
 }
 
 export default EmojiChanger;
