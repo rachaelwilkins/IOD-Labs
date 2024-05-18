@@ -16,15 +16,36 @@ function BigCats() {
         <SingleCat
             latinName={cat.latinName}
             name={cat.name}
-            image={cat.image}
-        />
+            image={cat.image}/>
     ))
+
+    const handleSortCats = () => { 
+        let newCats = [...cats];
+        newCats.sort(); 
+        setCurrentCats(newCats); 
+        }
+    
+    const handleReverseCats = () => { 
+        let newCats = [...cats];
+        newCats.reverse(); 
+        setCurrentCats(newCats); 
+        }       
+        
+    const handleFilterCats = () => { 
+        let result = text.startsWith("Panthera");
+        document.getElementById().innerHTML = result;
+        }     
 
     return (
         <div className="BigCats componentBox">
-            <ul>
-                {catItems}
-            </ul>
+            <h2>Exercises 2, 4 and 5 - Big Cats</h2>
+                <button onClick={handleSortCats}>Sort A-Z</button>
+                <button onClick={handleReverseCats}>Sort Z-A</button>
+                <button onClick={handleFilterCats}>Panthera Only</button>
+                <button onClick="formReset()">Reset</button>
+                    <ul>
+                        {catItems}
+                    </ul>
         </div>
     )
 }   
