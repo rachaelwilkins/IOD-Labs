@@ -5,7 +5,6 @@ import './App.css'
 import Lab1Greeting from './Components/Greeting'
 import EmojiChanger from './Components/Emoji'
 import BigCats from './Components/BigCats'
-import Calculator from './Components/Calculator'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,7 +24,6 @@ function App() {
       </Lab1Greeting>
       <EmojiChanger/>
       <BigCats/> 
-      <Calculator/>
     </>
 
   )
