@@ -2,12 +2,12 @@ import { useState } from "react";
 
 function emojiMoods() {
 
-    const emojiList = [
+    const emojiTypes = [
         { name: 'happy', image: '../../EmojiImages/happy emoji.jpg' },
         { name: 'sad', image: '../../EmojiImages/sad emoji.jpg' },
     ]    
 
-    const [emoji, setEmoji] = useState(emojiList.happy.image);
+    const [emoji, setEmoji] = useState(emojiTypes.happy.image);
 
     function switchMood() {
         if (emoji == emojiList.happy.image) {
