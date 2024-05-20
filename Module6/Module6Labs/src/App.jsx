@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Lab1Greeting from './Components/Greeting'
-import EmojiChanger from './Components/Emoji'
+import emojiMoods from './Components/Emoji'
 import BigCats from './Components/BigCats'
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
       <Lab1Greeting name='John'>
         <p>This is React - hope you like it as much as Gareth does.</p>
       </Lab1Greeting>
-      <EmojiChanger/>
+      <emojiMoods/>
       <BigCats/> 
     </>
 

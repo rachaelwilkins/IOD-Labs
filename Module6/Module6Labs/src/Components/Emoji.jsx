@@ -1,21 +1,28 @@
-function EmojiChanger() {
+function emojiMoods() {
 
-const moods = [
-    {name: 'happy', image: '../../EmojiImages/happy emoji.jpg'},
-    {name: 'sad', image: '../../EmojiImages/sad emoji.jpg'},
-];
+    const emojiList = [
+        { name: 'happy', image: '../../EmojiImages/happy emoji.jpg' },
+        { name: 'sad', image: '../../EmojiImages/sad emoji.jpg' },
+    ]    
 
-const handleDefaultMood = () => {
-  setMood('happy')
+    const [emoji, setEmoji] = useState(emojiList.happy);
+
+    function switchMood() {
+        if (emoji == emojiList.happy) {
+            setEmoji(emojiList.sad)            
+        } else if (emoji == emojiList.sad) {
+            setEmoji(emojiList.happy);
+        }
+    }
+
+    return (
+        <>
+            <h1>Exercise 3 - Emojis</h1>
+            <div>
+                <button onClick={switchMood}>Change mood</button>
+            </div>
+        </>
+    )
 }
 
-return (
-  <div className="MoodChanger">
-    <h1>Exercise 3 - Emoji</h1>
-    Current Mood: {'happy'}
-    <button onClick={() => setMood()}>Change Mood</button>    
-  </div>  
-)
-}
-
-export default EmojiChanger;
+export default emojiMoods;
