@@ -1,11 +1,16 @@
-function AddCatForm({onAddCat}) {
+import { useState } from "react"
+    
+function AddCatForm({addCat, cats}) {
+    
     const [name, setName] = useState('')
     const [latinName, setLatinName] = useState('')
     const [image, setImage] = useState('')    
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        onAddCat({name, latinName, image})
+        addCat([...cats,{name, latinName, image}])
+        console.log(image);
+        //onAddCat({name, latinName, image})
     }
 
 return (
@@ -23,7 +28,6 @@ return (
             <p>Image:</p> 
                 <input name="file" input type="file" value={image}
                     onChange={(e) => setImage(e.target.value)}/>
-                    <button type="submit">Upload</button>
             </label>           
             <button>Add Cat</button>         
         </form>

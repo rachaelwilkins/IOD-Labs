@@ -1,25 +1,24 @@
 import { useState } from "react";
 
-function emojiMoods() {
+function EmojiMoods() {
+ 
+    const happy= '../../EmojiImages/happy emoji.jpg' 
+    const sad= '../../EmojiImages/sad emoji.jpg' 
 
-    const emojiTypes = [
-        { name: 'happy', image: '../../EmojiImages/happy emoji.jpg' },
-        { name: 'sad', image: '../../EmojiImages/sad emoji.jpg' },
-    ]    
-
-    const [emoji, setEmoji] = useState(emojiTypes.happy.image);
+    const [emoji, setEmoji] = useState(happy);
 
     function switchMood() {
-        if (emoji == emojiList.happy.image) {
-            setEmoji(emojiList.sad.image)            
-        } else if (emoji == emojiList.sad.image) {
-            setEmoji(emojiList.happy).image;
+        if (emoji == happy) {
+            setEmoji(sad)            
+        } else if (emoji == sad) {
+            setEmoji(happy);
         }
     }
 
     return (
         <>
             <h1>Exercise 3 - Emojis</h1>
+            <img src={emoji}></img>
             <div>
                 <button onClick={switchMood}>Change mood</button>
             </div>
@@ -27,4 +26,4 @@ function emojiMoods() {
     )
 }
 
-export default emojiMoods;
+export default EmojiMoods;
