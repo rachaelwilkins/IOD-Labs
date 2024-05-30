@@ -1,19 +1,26 @@
-import { useState } from 'react'
+import { useState } from "react";
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
-import React from 'react'
-import { BrowserRouter } from 'react-router-dom'
-import { HomePage } from './Components/HomePage'
+import "./App.css";
+import React from "react";
+import BitcoinRates from "./Components/BitcoinsRates";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
-    <p>hi</p>
+    <div>
+        <a href="https://vitejs.dev" target="_blank">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
+      </div>
+      <BitcoinRates/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
