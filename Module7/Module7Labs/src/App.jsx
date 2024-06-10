@@ -4,7 +4,6 @@ import viteLogo from '/vite.svg'
 import "./App.css";
 import React from "react";
 import BitcoinRates from "./Components/BitcoinsRates";
-import UpdatedBitcoinRates from "./Components/UpdatedBitcoinRates";
 
 function App() {
   const [count, setCount] = useState(0);
