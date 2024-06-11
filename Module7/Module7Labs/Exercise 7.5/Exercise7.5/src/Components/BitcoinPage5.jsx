@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 const currencies = ['USD', 'AUD', 'NZD', 'GBP', 'EUR', 'SGD'];
 
-function BitcoinRates() {
+function BitcoinPage() {
 
     const [currency, setCurrency] = useState(currencies[0]);
 
@@ -31,7 +31,7 @@ function BitcoinRates() {
     const options = currencies.map(curr => <option value={curr} key={curr}>{curr}</option>);
     return (
         <div className="BitcoinRates componentBox">
-            <h1>Exercise 6.1 - BitCoin Rates</h1>
+            <h1>BitCoin Rates</h1>
             <label>Set currency:
                 <select value={currency} onChange={e => setCurrency(e.target.value)}>
                     {options}
@@ -42,4 +42,4 @@ function BitcoinRates() {
     )
 }
 
-export default BitcoinRates
+export default BitcoinPage

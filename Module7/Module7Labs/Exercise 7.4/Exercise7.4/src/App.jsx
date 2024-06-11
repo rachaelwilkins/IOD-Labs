@@ -1,9 +1,8 @@
-import { useState } from 'react'
 import React from 'react';
 import NavBar from './Components/Navbar';
 import './App.css';
 import AppRoutes from './Routes/AppRoutes';
-
+import { BrowserRouter } from 'react-dom'
 
 function App() {
 
