@@ -4,9 +4,9 @@ const app = express()
 
 const app2 = express()
 
-const myroutes = require('./Routes/myTestRoutes')
+const myroutes = require('../Routes/myTestRoutes')
 
-const myuserroutes = require('./Routes/userRoutes')
+const myuserroutes = require('../Routes/userRoutes')
 
 const port = 3004
 
